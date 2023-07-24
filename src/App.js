@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Board from "./components/Board";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="flex justify-center">
+        <h3 className="font-bold m-4 p-4 bg-yellow-500 text-white text-lg rounded-lg text-center w-40 border border-solid shadow-sm">
+          2048 Puzzle
+        </h3>
+      </div>
+      <Board />
     </div>
   );
 }
